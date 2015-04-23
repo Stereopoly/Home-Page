@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Hello Oscar!</title>
+		<link rel="stylesheet" href="homeStyle.css" type="text/css" />
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+        <META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
+        <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+		<script src="./jquery.min.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=Raleway|Open+Sans' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+        <h1 style=" color: white;"> Welcome back, Oscar.</h1>
+		<ul class="border">
+			<li><a class="parent1" target="_blank" href="https://www.google.com/?gws_rd=ssl">Google</a>
+				
+			</li>
+			<li><a class="parent2" target="_blank" href="https://mail.google.com/mail/u/0/#inbox">Gmail</a>
+				
+			</li>
+			<li><a class="parent3" target="_blank" href="https://drive.google.com/drive/u/0/my-drive">Drive</a>
+				
+			</li>
+            <li><a class="parent1" target="_blank" href="https://www.facebook.com/">Facebook</a>
+				
+			</li>
+            <li><a class="parent2" target="_blank" href="https://www.udemy.com/home/my-courses/#/learning">Udemy</a>
+				
+			</li>
+            
+            </li>
+            <li><a class="parent3" target="_blank" href="https://www.youtube.com/">Youtube</a>
+				
+			</li>
+            
+		</ul>
+		<script>
+			$('.subMenu').hide();
+			$("li:has(ul)").click(
+				function()
+				{
+					$("ul",this).slideToggle('slow');
+				}
+			);
+		</script>
+	</body>
+</html>
